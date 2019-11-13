@@ -1,6 +1,8 @@
 # signal-processing
 This repository gathers implementations of machine learning algorithms for signal processing using Python from scratch.
 
+Coming next: isomap, and locally linear embedding (LLE) for dimensionality reduction with manifold learning.
+
 ## Dimensionality Reduction
 Principal Components Analysis is implemented for dimensionality reduction. The following will run the demo:
 ```
