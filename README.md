@@ -4,9 +4,9 @@ This repository gathers implementations of machine learning algorithms for signa
 Coming next: isomap, and locally linear embedding (LLE) for dimensionality reduction with manifold learning.
 
 ## Dimensionality Reduction
-Principal Components Analysis is implemented for dimensionality reduction. The following will run the demo:
+The following will run the PCA demo from the [first article](https://towardsdatascience.com/step-by-step-signal-processing-with-machine-learning-pca-ica-nmf-8de2f375c422):
 ```
-python dimensionality_reduction.py
+python -c 'from dimensionality_reduction import demo; demo()'
 ```
 This performs PCA on the 982 MNIST images of the number 4, and saves a sample reconstruction from reduced images with 2, 16, 64 and 256 principal components.
 
@@ -14,8 +14,27 @@ Input image: ![Original image](https://github.com/kayoyin/signal-processing/blob
 
 Reconstruction with 2, 16, 64, 128 principal components: ![2 image](https://github.com/kayoyin/signal-processing/blob/master/output/pca_2.jpg) ![Original image](https://github.com/kayoyin/signal-processing/blob/master/output/pca_16.jpg) ![Original image](https://github.com/kayoyin/signal-processing/blob/master/output/pca_64.jpg) ![Original image](https://github.com/kayoyin/signal-processing/blob/master/output/pca_256.jpg)
 
+### Manifold learning
+Isomap and LLE are implemented for manifold learning.
+The following will run the demo from the second article:
+```
+python dimensionality_reduction.py
+```
+This performs PCA, Isomap and LLE on the 892 MNIST images of the number 5 and saves the 2D projection of the data points.
+
+PCA projection:
+![Original image](https://github.com/kayoyin/signal-processing/blob/master/output/pca_five.png)
+
+Isomap projection:
+![Original image](https://github.com/kayoyin/signal-processing/blob/master/output/isomap_five.png)
+
+
+LLE projection:
+![Original image](https://github.com/kayoyin/signal-processing/blob/master/output/lle_five.png)
+
+
 ## Source Separation
-Independent Components Analysis and Nonnegative Matrix Factorizationo are implemented for source separation.
+Independent Components Analysis and Nonnegative Matrix Factorization are implemented for source separation.
 The following will run the demo:
 ```
 python source_separation.py
